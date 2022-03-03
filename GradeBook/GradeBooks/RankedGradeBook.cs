@@ -20,7 +20,7 @@ namespace GradeBook.GradeBooks
 
             foreach(Student s in Students)
             {
-                if(s.AverageGrade > averageGrade)
+                if(s.AverageGrade >= averageGrade)
                     counter++;
 
                 else
@@ -38,7 +38,7 @@ namespace GradeBook.GradeBooks
                 }
             }
 
-            return ' ';
+            return 'F';
         }
 
         public override void CalculateStatistics()
